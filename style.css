@@ -126,6 +126,7 @@ nav ul a:hover{
     box-shadow:0 0 30px rgba(56,189,248,.35);
     animation:float 3s ease-in-out infinite;
 }
+
 /* ================= ABOUT ================= */
 
 .about{
@@ -154,7 +155,6 @@ nav ul a:hover{
     color:#cbd5e1;
     line-height:1.9;
 }
-
 
 /* ================= EDUCATION ================= */
 
@@ -225,6 +225,7 @@ nav ul a:hover{
     border-radius:25px;
     font-size:14px;
 }
+
 /* ================= SKILLS ================= */
 
 .skills{
@@ -305,6 +306,8 @@ nav ul a:hover{
     overflow:hidden;
     box-shadow:0 10px 25px rgba(0,0,0,.35);
     transition:.4s;
+    display:flex;
+    flex-direction:column;
 }
 
 .project-card:hover{
@@ -321,11 +324,21 @@ nav ul a:hover{
 .project-card h3{
     margin:20px 0 10px;
     color:#ffffff;
+    font-size:24px;
+}
+
+.project-card p{
+    color:#cbd5e1;
+    font-size:15px;
+    line-height:1.8;
+    padding:0 20px;
+    margin-bottom:20px;
+    flex:1;
 }
 
 .project-card a{
     display:inline-block;
-    margin-bottom:20px;
+    margin:0 0 25px;
     color:#38bdf8;
     font-weight:bold;
     transition:.3s;
@@ -334,6 +347,7 @@ nav ul a:hover{
 .project-card a:hover{
     color:#60a5fa;
 }
+
 /* ================= CONTACT ================= */
 
 .contact{
@@ -421,6 +435,10 @@ footer{
         padding:20px;
     }
 
+    nav{
+        width:100%;
+    }
+
     nav ul{
         flex-direction:column;
         align-items:center;
@@ -488,6 +506,7 @@ footer{
         opacity:0;
         transform:translateX(-50px);
     }
+
     to{
         opacity:1;
         transform:translateX(0);
